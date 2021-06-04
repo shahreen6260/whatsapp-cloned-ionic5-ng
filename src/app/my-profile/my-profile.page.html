@@ -1,0 +1,71 @@
+<ion-header fullscreen="full">
+  <ion-toolbar>
+    <ion-icon class="button" name="arrow-back-outline" [routerLink]="['/home']" routerLinkActive="router-link-active"></ion-icon>
+  Settings
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+ 
+<ion-list >
+  <!-- <ion-item>
+    <ion-thumbnail item-start>
+      <img class="commom-img" src="assets/Profile.JPG">
+      <ion-icon class="scanner-icon" name="qr-code-outline"></ion-icon>
+    </ion-thumbnail>
+    <ion-label class="ion-margin">
+      
+      <h2>Shahreen</h2>
+      <p>K!ND SOUL </p>
+    
+    </ion-label>
+  </ion-item> -->
+  <ion-item class="parent">
+    <div class="child1">
+    <ion-thumbnail item-start>
+      <img class="commom-img" src="assets/Profile.JPG">
+    </ion-thumbnail>
+
+    <ion-label>
+      <div class="title-name ">
+      <h2>Shahreen</h2>
+      <p>K!ND SOUL</p>
+    </div>
+    </ion-label>
+    </div>
+      <div class="child2">
+        <ion-icon class="scanner-icon" name="qr-code-outline"></ion-icon>
+      </div>
+  </ion-item>
+
+
+
+  <div *ngFor="let item of list1">
+  <ion-item lines="none">
+    <ion-thumbnail item-start>
+      <ion-icon class="commom-icon" [name]="item.icon"></ion-icon>
+    </ion-thumbnail>
+    <ion-label>
+      <h2>{{item.account}}</h2>
+      <p>{{item.status}}</p>
+    </ion-label>
+  </ion-item>
+</div>
+
+  <ion-item>
+    <ion-thumbnail item-start>
+      <ion-icon  class="commom-icon" name="people-outline"></ion-icon>
+    </ion-thumbnail>
+    <ion-label>
+      <h2>Invite a friend</h2>
+    </ion-label>
+  </ion-item>
+
+</ion-list>
+
+<div class="ion-text-center"><i>from</i>
+ <div class="facebook-text">FACEBOOK</div> 
+</div>
+
+</ion-content>

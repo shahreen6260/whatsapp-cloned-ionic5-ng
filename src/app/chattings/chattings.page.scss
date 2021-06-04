@@ -1,0 +1,79 @@
+.header-heading {
+  font-size: 1.2em;
+  padding-left: 10px;
+  background-color: #118779;
+}
+ion-toolbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  --background: #118779;
+}
+.back-icon {
+  height: 20px;
+  width: 20px;
+  color: white;
+}
+.play-icon {
+  margin-left: 10px;
+  margin-left: 10px;
+  height: 20px;
+  width: 20px;
+}
+.search-icon {
+  height: 20px;
+  width: 20px;
+}
+.three-dots {
+  height: 20px;
+  width: 20px;
+}
+
+.message {
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 4px;
+  white-space: pre-wrap;
+}
+.other-message {
+  background: rgb(140, 195, 199);
+  color: black;
+}
+.my-message {
+  background: #8ad693;
+  color: black;
+}
+.time {
+  color: #7e2222;
+  float: right;
+  font-size: small;
+}
+.message-input {
+  width: 100%;
+  outline: none;
+  border-radius: 50px;
+  background: #fff;
+  resize: none;
+  margin-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: black;
+}
+.msg-btn {
+  --padding-start: 0.5em;
+  --padding-end: 0.5em;
+  color: white;
+  background-color: #118779;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+.mic {
+  height: 20px;
+  width: 20px;
+  color: white;
+  background-color: var(--background);
+  border-radius: 50%;
+}

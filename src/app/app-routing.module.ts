@@ -11,6 +11,22 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'popover-component',
+    loadChildren: () => import('./popover-component/popover-component.module').then( m => m.PopoverComponentPageModule)
+  },
+  {
+    path: 'my-profile',
+    loadChildren: () => import('./my-profile/my-profile.module').then( m => m.MyProfilePageModule)
+  },
+  {
+    path: 'chattings',
+    loadChildren: () => import('./chattings/chattings.module').then( m => m.ChattingsPageModule)
+  },
+  {
+    path: 'contacts',
+    loadChildren: () => import('./contacts/contacts.module').then( m => m.ContactsPageModule)
+  },
 ];
 
 @NgModule({
