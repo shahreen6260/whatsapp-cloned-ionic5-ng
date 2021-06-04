@@ -11,7 +11,6 @@ import { TextToSpeech } from '@ionic-native/text-to-speech/ngx';
 import { SpeechRecognition } from '@ionic-native/speech-recognition/ngx';
 import { Camera } from '@ionic-native/camera/ngx';
 
-// demo whatsapp
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
